@@ -9,9 +9,6 @@ def getConfigParser(file):
         return config
 
 
-# 居たら取得、居なけりゃ作る
-
-
 def writeOption(file, parser, _section, key, value):
     if not parser.has_section(_section):
         parser[_section] = {key: value}
